@@ -41,3 +41,11 @@ class HelloApiStack(Stack):
 
         # Create the POST /employee endpoint
         api.root.resource_for_path('/employee').add_method('POST', add_employee_integration)
+
+        # Defines an AWS Lambda resource
+        hello_lambda = _lambda.Function(
+            self, 'HelloHandler',
+            runtime=_lambda.Runtime.PYTHON_3_9,
+            code=_lambda.Code.from_asset('lambda'),
+            handler='hello_world.handler',
+        )
