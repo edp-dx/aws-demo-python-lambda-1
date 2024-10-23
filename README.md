@@ -1,10 +1,8 @@
-# AWS Demo Python Lambda
+# AWS CDK Python Project
 
-This project demonstrates the use of AWS Lambda functions with Python and the AWS CDK (Cloud Development Kit).
+This is an AWS CDK project written in Python.
 
 ## Project Structure
-
-The project is structured as follows:
 
 ```
 ├── README.md
@@ -23,6 +21,14 @@ The project is structured as follows:
     └── workflows/
         └── ci-cd.yaml
 ```
+
+## Useful commands
+
+ * `cdk ls`          list all stacks in the app
+ * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk docs`        open CDK documentation
 
 ## Getting Started
 
